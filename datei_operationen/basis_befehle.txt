@@ -1,8 +1,10 @@
 cd 				- change directory
 	#wechselt das Verzeichnis
 
-mkdir			- make directory
+mkdir			- make directories
 	#erstellt Verzeichnisse
+
+		Beispiel: mkdir -p Ordner/{A11,A12}/{AU1,AU2}
 
 ls 				- list directory contents
 	#zeigt den Inhalt eines Verzeichnisses an
@@ -10,7 +12,7 @@ ls 				- list directory contents
 cp				- copy 
 	#kopiert Dateien und Verzeichnisse
 
-rm
+rm				- remove directories
 	#löscht Dateien und Verzeichnissen
 	rm -rf 
 		#-r rekursiv:		von hier an alle Verzeichnisse
