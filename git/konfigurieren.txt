@@ -8,6 +8,7 @@ git config --global user.name "lebichmar"
 git config --global user.email "m.lebich@gmx.de"
 	#Der bei github.com gemappte E-Mail-Adresse sollte hier eingetragen werden.
 
-git config --global credential.helper 'cache --timeout=36000'
-	#Damit nicht bei jedem push Benutzer und Passwort eingegeben werden muss, werden die Daten für 36000s gespeichert.
+git config --global credential.helper 'cache --timeout=3600000'
+	#Damit nicht bei jedem push Benutzer und Passwort eingegeben werden muss, werden 
+	die Daten für 3600000s gespeichert.
 
