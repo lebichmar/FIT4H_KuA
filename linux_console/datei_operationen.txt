@@ -1,0 +1,67 @@
+cd 				- change directory
+	#wechselt das Verzeichnis
+	
+	cd ~	#wechselt in das home-Verzeichnis
+	cd /
+	cd ..	#navigiert eine Ebene im Pfad zurück
+	cd .
+	cd Dokumente						#relativer Pfad: vom aktuellen Standort aus
+	cd /home/pan/Downloads	#absoluter Pfad: von der Wurzel / des Dateisystems anfangend
+
+touch
+	#Erzeugt eine Datei
+
+	touch datei_name 
+		#erstellt im aktuellen Verzeichnis die Datei datei_name
+		Linux selbst kennt keine Dateiendungen
+
+mkdir			- make directories
+	#erstellt Verzeichnisse
+
+	mkdir verzeichnis_01		
+		#erzeugt einen Ordner im aktuellen Verzeichnis
+	mkdir /home/pan/Dokumente/verzeichnis_02
+		#Verzeichnis mit absoluter Pfadangabe erzeugt
+
+		Beispiel: mkdir -p Ordner/{A11,A12}/{AU1,AU2}
+
+ls 				- list directory contents
+	#zeigt den Inhalt eines Verzeichnisses an
+
+	ls -l  	#	-l long
+						-a mit versteckten Dateien
+				 		-t nach time sortieren (jüngste zuerst)
+
+
+
+cp				- copy 
+	#kopiert Dateien und Verzeichnisse
+
+	cp quelle ziel
+	cp datei03 datei04
+		#die existierende Datei datei04 wird als datei04 im aktuellen Verzeichnis neu erzeugt oder überschrieben
+	cp datei03 ~/Dokumente/datei03
+		#Datei datei03 wird in das Verzeichnis Dokumente kopiert
+	cp -r verzeichnis1 verzeichnis2
+		#beim Kopieren von Verzeichnissen muss der Schalter -r gesetzt werden. Dann wird ein Quellverzeichnis (verzeichnis1) mit allen Unterordnern und Dateien an das Ziel (verzeichnis2) kopiert.
+	cp *.txt unterverzeichnis/ 
+		#Kopiert alle Dateien mit der Endung .txt in das Ziel (unterverzeichnis)
+		#der Asterisk (*) steht für beliebig viele Zeichen
+
+rm				- remove directories
+	#löscht Dateien und Verzeichnissen
+	rm -rf 
+		#-r rekursiv:		von hier an alle Verzeichnisse
+		#-f	force: 			alles wird ohne Nachfrage gelöscht
+
+		Beispiel: cd /home/pan/
+							rm -rf eup_fit2ah
+
+mv				-move
+	mv quelle ziel
+		#Der Befehl wird zum Umbenennen und zum Verschieben von Dateien und Ordnern benutzt.
+
+less
+	less dateiname
+
+		#zeigt den Inhalt einer Datei seitenweises an. Weiterblätter mit Leertaste und beenden mit q.
