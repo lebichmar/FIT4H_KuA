@@ -1,0 +1,22 @@
+cd 				- change directory
+	#wechselt das Verzeichnis
+
+mkdir			- make directories
+	#erstellt Verzeichnisse
+
+		Beispiel: mkdir -p Ordner/{A11,A12}/{AU1,AU2}
+
+ls 				- list directory contents
+	#zeigt den Inhalt eines Verzeichnisses an
+
+cp				- copy 
+	#kopiert Dateien und Verzeichnisse
+
+rm				- remove directories
+	#löscht Dateien und Verzeichnissen
+	rm -rf 
+		#-r rekursiv:		von hier an alle Verzeichnisse
+		#-f	force: 			alles wird ohne Nachfrage gelöscht
+
+		Beispiel: cd /home/pan/
+							rm -rf eup_fit2ah
