@@ -1,0 +1,16 @@
+pipe
+	Beispiel: 
+		ls -l /etc | less
+			#durch die Pipe (|) wird das Ergebnis die Ausgabe des Befehls ls... weitergeleitet in den Befehl less
+			#Dadurch kann man eine seitenweise Anzeige der Dateien und Ordner erzwingen
+
+> 
+	Beispiel:
+		ls -l /etc > dateiname
+			#durch das Zeichen wird die Ausgabe in eine Datei umgeleitet. Falls die Datei existiert wird sie überschreiben, ansonsten neu erzeugt.
+
+>> 
+	Beispiel:
+		ls -l /etc >> dateiname
+			#der Dateiinhalt wird nicht überschrieben, sondern es wird anghängt.
+

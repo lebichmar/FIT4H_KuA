@@ -16,3 +16,5 @@ Obwohl es sich bei der Konsole um ein Distributionsübergreifendes Programm hand
  #nach Bearbeitung der .bashrc muss mit dem Befehl "source .bashrc" neustgestartet werden
 
 	alias kua="cd /home/pan/Dokumente/kua_fit4h" #navigiert zum Ordner
+
+	PATH	#definiert die Pfade zum Suchen ausführbarer Dateien
