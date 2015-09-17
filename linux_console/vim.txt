@@ -1,0 +1,43 @@
+Eingabemodus 
+
+d 	
+		w - bis zum Beginn des nächsten Wortes OHNE dessen erstes Zeichen.
+    e - zum Ende des aktuellen Wortes MIT dessen letztem Zeichen.
+    $ - zum Ende der Zeile MIT dem letzen Zeichen.
+
+Tippe  d2w  , um die zwei Wörter zu löschen.
+
+dw		löscht ein Wort 
+dd		löscht ganze Zeile
+2dd		löscht 2 Zeilen
+d$		löscht bis zum Ende einer Zeile
+x			löscht einen Buchstaben
+i			Einfügen vor Cursor
+I 		Einfügen am Zeilenanfang
+a 		Einfügen am 
+A			Anfügen am Zeilenende
+
+
+
+
+#################################################################################
+
+Befehlsmodus (ESC,)
+
+0				Zeilenanfang
+H				erste Bildschirmzeile
+L 			unterste Bildschirmzeile
+:q!			Beenden des vim, alle Änderungen werden verworfen
+:wq  		Änderungen übernehmen und verlassen
+u 			Rückgängig
+U 			Rückgängigmachung innerhalb einer Zeile
+CTRL-R	Alle Rückgängigmachungen rückgängig zu machen 
+r(x)		x steht für eienen beliebigen Buchstaben, der ersetzt werden soll
+ce  		Wortkorrektur ab Position des Cursors
+gg			Dateianfang
+G 			Dateiende
+100G 		springt in Zeile 100
+
+Tippe :s/alt/neu/g  , um 'alt' durch 'neu' zu ersetzen
+
+
