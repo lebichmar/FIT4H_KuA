@@ -1,0 +1,17 @@
+
+$eingabe="q"
+if [[ $eingabe == 'p' ]]
+then
+	echo "Gut gemacht mit dem p"
+elif [[ $eingabe == 'q' ]]
+then
+		echo "Ein q !!! Wie cool."
+else 
+	echo "Zu schwierig mit p?"
+fi
+
+Bedingungen:
+STRING:
+	[[ $bed ]] 						#gibt true wenn nicht leer
+	[[ $bed = "wert" ]] 	#gibt true wenn Übereinstimmung
+ 

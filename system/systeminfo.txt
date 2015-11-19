@@ -1,0 +1,19 @@
+Info über die Hardware des Systems
+	lscpu
+	less /proc/cpuinfo		#detailreichere Ausgabe
+	lspci
+
+Speicher
+	free -m
+
+Festplatten/partition
+	fdisk -l /dev/sda
+
+Bootinfos
+	dmesg | less
+
+Log-Dateien
+	/var/log
+		#system.log
+			#alle Systeminformationen werden hier geloggt.
+			(Wer ist eingeloggt, ausgeloggt, Probleme mit Hw, Meldung über Superuser-Aktivitäten)
