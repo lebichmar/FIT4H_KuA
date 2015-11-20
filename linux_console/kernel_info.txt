@@ -1,0 +1,139 @@
+uname -r 	#zeigt aktuelle Kernelversion an
+
+lsb_release -a 	#zeigt Distribution an (LSB: linux standard base, Arbeitsgruppe)
+
+strg+Alt+f1 
+	#Öffnen einer inbuilt-Console (gehört zum System)
+
+strg+Alt+f7 
+	#zurück zur GUI
+
+/dev	
+	#zeigt alle System an
+
+top
+zeigt alle Prozesse an
+
+ls /proc
+	zeigt jeden einzelnen Prozess an
+
+less /proc/meminfo
+	#steht in einer Datei
+
+free -m
+	#Überblich Gesamtsystem
+
+im Verzeichnis /var
+
+ls /var/log
+	#zeigt alle Logdateien an
+	#werden nach einem bestimmten Zeitraum gezippt
+
+tail -n100 /var/log/syslog
+	#zeigt die letzten 100 Zeilen der Syslog an
+
+tail -f /var/log/syslog
+	#zur Laufzeit (live-Mitschnitt)
+
+less /var/log/boot.log
+	#Übersicht geladene Treiber oder Systemkomponenten
+
+	oder
+		dmesg | grep cups		#sucht nach Druckertreiber
+
+runlevel	#zeigt den aktuellen runlevel an
+mit:
+	sudo init 0 , wird das system heruntergefahren
+
+Bootlevel:
+0 ausgeschaltet
+1 single user
+2 multiuser ohne gui
+3 multiuser mit network und gui
+4	-
+5	full
+6 reboot
+
+
+sudo service ssh status #zeigt den status des ssh Dienstes an
+
+Paketmanagement:
+	#genaue Liste über das was auf dem system installiert ist (mit Versionierung)
+	#verantwortlich für die Aktualisierung
+	#Softwareverteilung
+	#Deinstallation
+
+Paketformate:
+	.rpm
+	.deb
+
+Paketkategorien:
+main				#Standard
+restricted	#vom Ubunto Team bereitgestellte Software (GraKa-Treiber)
+universe		#opensource aus der Comuu
+multiverse	
+
+less /etc/apt/sources.list
+	#zeigt die Links zu den Paketquellen an
+	#auch Aktualisierungen
+
+sudo add -apt -repository ppa:webupd8team/sublime -text -2
+	#Hinzufügen einer neuen Quelle
+	#anschließend: get -apt update
+
+Vor einer Neuinstallation
+ 	#sudo apt-get update	(Zieht die neue Liste)
+
+	#sudo apt-get upgrade 	#installiert die Updates(nur bei einem Unterschied werden die Neuerungen installiert)
+
+	#sudo apt-get dist-upgrade
+		#Aktualisiert auch den Kernel
+
+sudo apt-get remove <paketname>			#entfernt das angegebene Paket
+
+sudo apt-get autoremove	<paketname>	#alle nicht benötigten Pakete werden deinstalliert
+
+dpkg -s vim
+	#zeigt Informationen über eine bestimmte Software(Pakete) an.
+	
+dpkg -L vim
+	#zeigt Komponenten oder Software an, die mit dem VIM verbunden sind, aber nicht im Paket enthalten sind.
+
+dpkg -reconfigure keyboard-configuration
+	#man kann Pakete-Einstellungen ändern, hier Tastatur-Layout
+
+sudo lsblk
+	#Information über die Festplatte
+
+fdisk -l
+	#Zum Partitionieren
+
+	-l zeigt Informationen an
+
+sudo parted /dev/sda print
+	#zum Anzeigen von Partitionen mit 
+
+Dateisysteme:
+ext2
+ext3
+ext4			#aktueller Standard
+xfs				#für große Dateien
+reiserfs	#gibt keine Weiterentwicklung
+
+df -h
+	#Information über Größe und Auslastung
+
+du -hs /home/pan/*
+	#zeigt Nutzerauslastung an
+
+dd if/=home/pan of=/irgend_ein_anderes_Ziel
+	#zum Kopieren 
+
+
+Prozesse:
+top										#zeigt alle Prozesse an
+
+jobs									#zeigt aktuelle Tasks an
+
+ps aux | grep sublime	
+kill -9 <pid>
