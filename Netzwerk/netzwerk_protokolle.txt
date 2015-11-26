@@ -1,0 +1,26 @@
+arp
+	#löst IP in MAC-Adressen
+
+ICMP
+	#dient der Übermittlung techn. Infos
+	#Teil des IP-Protokollstacks
+
+IP
+	#definiert die Datagramm-Struktur
+	#bewegt die Daten zwischen Transportschicht und Netzzugriffsschicht
+	#routet Datagramme
+	#teilt den Datenstrom und fügt ihn wieder zusammen
+
+TCP
+	#verbindungsorientierte und Fehlerkorrektur Mechanismus
+
+UDP
+	agiert ohne Fehlerkontrolle
+
+http/https
+	#webserver-Protokoll
+
+FTP
+	Dateiübertragungsprotokoll
+
+ 

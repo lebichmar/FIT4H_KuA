@@ -1,0 +1,6 @@
+Standardkonfiguration abfragen:
+	useradd -D
+
+Standardkonfiguration ändern:
+	/etc/default/useradd
+	
